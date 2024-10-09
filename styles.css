@@ -1,0 +1,238 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('img/Img1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn-hero {
+    padding: 10px 30px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-hero:hover {
+    background-color: #ff9900;
+}
+
+/* Menu Section */
+.menu {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-image:hover {
+    transform: scale(1.1);
+}
+
+/* Promoções */
+.promo {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.promo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Carrossel */
+.carrossel {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.carousel-image {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-button, .whatsapp-button {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.social-button:hover, .whatsapp-button:hover {
+    color: #ffcc00;
+}
+/* Estilização da seção de contato */
+section.contato {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do formulário */
+#whatsappForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#whatsappForm input,
+#whatsappForm textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Deixar o campo de mensagem maior */
+#whatsappForm textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Botão de envio */
+#whatsappForm button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#whatsappForm button:hover {
+    background-color: #ff9900;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    #whatsappForm {
+        flex-direction: column;
+    }
+
+    #whatsappForm input,
+    #whatsappForm textarea {
+        font-size: 14px;
+    }
+}

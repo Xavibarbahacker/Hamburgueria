@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burguer Delícia - Sabores Inesquecíveis</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Burguer Delícia</h1>
+        <nav>
+          <ul>
+            <li><a href="#menu">Cardápio</a></li>
+            <li><a href="#promo">Promoções</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Experimente os melhores hambúrgueres artesanais!</h2>
+        <p>Sabores incríveis que vão conquistar seu paladar. Peça já o seu!</p>
+        <a href="#menu" class="btn-hero">Ver Cardápio</a>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2>Nosso Cardápio</h2>
+      <div class="menu-items">
+        <div class="item">
+          <img
+            src="img/burger-classico.jpg"
+            alt="Burger Clássico"
+            class="menu-image"
+          />
+          <h3>Burger Clássico</h3>
+          <p>R$ 25,00</p>
+        </div>
+        <div class="item">
+          <img
+            src="img/cheddar-especial.jpg"
+            alt="Cheddar Especial"
+            class="menu-image"
+          />
+          <h3>Cheddar Especial</h3>
+          <p>R$ 30,00</p>
+        </div>
+        <div class="item">
+          <img src="img/Bacon-supreme.jpg" alt="Bacon Supreme" class="menu-image" />
+          <h3>Bacon Supreme</h3>
+          <p>R$ 35,00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo" id="promo">
+      <h2>Promoções Especiais</h2>
+      <p>
+        Aproveite nossa promoção de 2 Burgers Clássicos por apenas R$ 40,00!
+      </p>
+    </section>
+
+    <section class="carrossel" id="carrossel">
+      <h2>Nossos Favoritos</h2>
+      <div class="carousel-container">
+        <img src="img/Img1.jpg" alt="Hambúrguer 1" class="carousel-image" />
+        <img src="img/Img2.jpg" alt="Hambúrguer 2" class="carousel-image" />
+        <img src="img/Img3.jpg" alt="Hambúrguer 3" class="carousel-image" />
+        <img src="img/Img4.jpg" alt="Hambúrguer 4" class="carousel-image" />
+      </div>
+      <button class="carousel-btn prev">❮</button>
+      <button class="carousel-btn next">❯</button>
+    </section>
+
+    <section class="contato" id="contato">
+      <h2>Entre em Contato</h2>
+      <form id="whatsappForm">
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Seu Nome"
+          required
+        />
+        <input
+          type="text"
+          id="telefone"
+          name="telefone"
+          placeholder="Seu WhatsApp"
+          required
+        />
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          rows="4"
+          placeholder="Sua Mensagem"
+          required
+        ></textarea>
+        <button type="submit">Enviar pelo WhatsApp</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Siga-nos nas redes sociais</p>
+      <a href="https://www.instagram.com" class="social-button">Instagram</a>
+      <a href="https://wa.link/m0gh9b" class="whatsapp-button">WhatsApp</a>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
